@@ -1,0 +1,12 @@
+   <script type="text/ng-template" id="toast-template">
+        <md-toast md-theme="default">
+            <div class="md-toast-content">
+                <span>
+                    <ng-bind-html
+                            ng-bind-html="customToast.icon">
+                    </ng-bind-html>
+                    {{customToast.text}}
+                </span>
+            </div>
+        </md-toast>
+    </script>
