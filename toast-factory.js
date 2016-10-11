@@ -14,7 +14,7 @@ app.factory("Toast", function createToastFactory ($mdToast, $mdDialog) {
         makeObj.position = newObj.position || 'top right';
         makeObj.templateUrl = newObj.templateUrl || 'toast-template';
         makeObj.parent = newObj.parent || '#toast-container';
-        makeObj.locals = newObj.locals || {toastText: "text", toastIcon: toastIconSuccess} ;
+        makeObj.locals = newObj.locals || {toastText: "text", toastIcon: hMap[success]} ;
         makeObj.hideDelay = 4000 || newObj.hideDelay;
         $mdToast.show(makeObj);
     }
